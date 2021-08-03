@@ -17,7 +17,7 @@ contract WETH is ERC20 {
 
     ///@param initialSupply the initial amount of WETH to be released and minted
     ///@notice the initialSupply will me minted to the address of the deployer
-    constructor (uint256 initialSupply) ERC20("Wrapped Ether", "WETH") {
+    constructor (uint256 initialSupply) ERC20("WETH", "WETH") {
         _tokenHolder = msg.sender;
         _mint(_tokenHolder, initialSupply);
     }
